@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: nkooinga/python-app:${GITHUB_SHA::6}
+          tags: nkooinga/python-app:${{ github.sha }}
