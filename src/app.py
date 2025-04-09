@@ -20,7 +20,7 @@ def details():
         'ip_address': socket.gethostbyname(socket.gethostname()),
         'port': request.host.split(':')[1],
         'protocol': request.scheme,
-        'message': 'OK here we go!'
+        'message': 'OK let\'s go!'
     }), 200
 
 @app.route('/api/v1/health', methods=['GET'])
