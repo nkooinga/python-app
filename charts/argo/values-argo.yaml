@@ -1,0 +1,26 @@
+redis-ha:
+  enabled: false
+
+controller:
+  replicas: 1
+
+server:
+  replicas: 1
+
+repoServer:
+  replicas: 1
+
+applicationSet:
+  replicas: 1
+
+# gloabl:
+#   domain: argocd.example.com
+
+certificate:
+  enabled: true
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    tls: true
