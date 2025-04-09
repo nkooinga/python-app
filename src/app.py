@@ -21,7 +21,7 @@ def details():
         'port': request.host.split(':')[1],
         'protocol': request.scheme,
         'message': 'Hello, World!'
-    })
+    }), 200
 
 @app.route('/api/v1/health', methods=['GET'])
 def health():
